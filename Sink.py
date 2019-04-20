@@ -41,7 +41,7 @@ class Customer_Vuln_Scanner(object):
         self.basic_sql = "'"
         self.b_unescaped_true = "OR 1=5-4"
         self.b_escaped_true = "'OR 1=5-4"
-        self.ssrf_test = "http://137.74.21.211:8001/testssrf.jpg"
+        self.ssrf_test = "http://0.0.0.0:8001/testssrf.jpg"
         self.poss_blind_sqlis = []
         self.poss_error_based_sqlis = []
         # https://github.com/0xhex/google-dork-scanner/blob/master/scanner.py borrowed this and modded it to use a list more efficient added more errors
